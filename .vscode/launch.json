@@ -1,0 +1,23 @@
+{
+    "compounds": [
+        {
+            "name": "[Dev + Chrome]",
+            "configurations": ["Launch Dev server", "Launch Chrome"]
+        }
+    ],
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "Launch Dev server",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+    ]
+}
